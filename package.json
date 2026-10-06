@@ -1,7 +1,7 @@
 {
   "name": "api-key-verifier",
-  "version": "1.0.0",
-  "description": "CLI tool to verify and validate API keys",
+  "version": "1.1.0",
+  "description": "Professional CLI for validating and testing API keys against real provider endpoints.",
   "main": "dist/index.js",
   "type": "module",
   "bin": {
@@ -10,18 +10,25 @@
   "scripts": {
     "build": "tsc",
     "start": "node dist/cli.js",
-    "test": "node --test dist/test.js",
-    "dev": "tsc && node dist/cli.js"
+    "verify": "node dist/cli.js",
+    "test": "node --test dist/test.js"
   },
-  "keywords": ["api", "key", "verify", "validation", "cli"],
-  "author": "",
+  "keywords": [
+    "api",
+    "key",
+    "verify",
+    "validation",
+    "cli",
+    "security"
+  ],
+  "author": "karmabuild49",
   "license": "MIT",
   "dependencies": {
     "chalk": "^5.3.0",
     "commander": "^11.1.0"
   },
   "devDependencies": {
-    "@types/node": "^20.0.0",
-    "typescript": "^5.3.0"
+    "@types/node": "^20.13.0",
+    "typescript": "^5.5.4"
   }
 }
